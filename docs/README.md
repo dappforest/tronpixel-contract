@@ -120,34 +120,6 @@ function getPixel(uint32 coordinate) public view returns (address owner, uint32 
 }
 ```
 
-### 4.4 Get game information
-
-// name: getGameInfo
-// get the information of the game
-```solidity
-function getGameInfo() public view returns (uint, uint, uint, uint, uint32, uint, uint, address, uint, uint, uint, uint8, uint)
-
-// returns like
-{
-    balance: "355796.311299"
-    bonusIndex: "78.087283"
-    currentHeight: 4902184
-    endTime: "4925897"
-    energyLimit: 0
-    energyUsed: 0
-    grossIncome: "153065.838271"
-    lastPaintedAt: "4901623"
-    lastPainter: "TWjrpbLtMdS27cnDmfYGygwq99J8zsiE2N"
-    lastStageIncome: "7537.503885"
-    marketValue: "195083.353569"
-    pixels: 6953
-    pixelsPainted: 8333
-    potAmount: "15306.583827"
-    stage: 0
-    teamBalance: "52191.844848"
-}
-```
-
 ### 4.5 Get user information
 
 // name: getUserInfo
