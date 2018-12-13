@@ -120,7 +120,7 @@ function getPixel(uint32 coordinate) public view returns (address owner, uint32 
 }
 ```
 
-### 4.5 Get user information
+### 4.4 Get user information
 
 // name: getUserInfo
 // get the information of user
@@ -128,7 +128,7 @@ function getPixel(uint32 coordinate) public view returns (address owner, uint32 
 function getPixel(uint32 coordinate) public view returns (address owner, uint32 color, uint price)
 ```
 
-### 4.6 Get user information by address
+### 4.5 Get user information by address
 
 // name: getUserInfoByAddress
 // get the information of user by the given address
@@ -141,7 +141,7 @@ function getUserInfoByAddress(address addr) public view returns (
     uint bonusUncollected, uint earning, address referrer, uint referrerAward)
 ```
 
-### 4.7 Get paint logs
+### 4.6 Get paint logs
 
 
 // name: getPaintLogs
