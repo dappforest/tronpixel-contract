@@ -93,6 +93,13 @@ function getPixelsPrice(uint32[] coordinates) public view returns (uint[])
 | coordinate | uint32 | --  | pixel coordinate to query |
 ```solidity
 function getPixel(uint32 coordinate) public view returns (address owner, uint32 color, uint price)
+
+// returns link
+{
+    color: 0
+    owner: ""
+    price: "20000000"
+}
 ```
 
 ### 4.4 Get game information
