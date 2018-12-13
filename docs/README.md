@@ -82,6 +82,24 @@ function getTotalPrice(uint32[] coordinates) public view returns (uint totalPric
 | coordinates | uint32(Array) | --   | pixels coordinate to query |
 ```solidity
 function getPixelsPrice(uint32[] coordinates) public view returns (uint[])
+
+// returns like
+[
+    0: t
+    _hex: "0x01312d00"
+    _ethersType: "BigNumber"
+    __proto__: Object
+    1: t
+    _hex: "0x01312d00"
+    _ethersType: "BigNumber"
+    __proto__: Object
+    2: t
+    _hex: "0x01312d00"
+    _ethersType: "BigNumber"
+    __proto__: Object
+    3: t
+    _hex: "0x01312d00"
+]
 ```
 
 ### 4.3 Get pixel information
