@@ -39,8 +39,9 @@ uint public finalPotAmount;
 
 ### 3.1 Buy pixels and set referrer address
 
-// name: buyPixelsFristTime
-// invoke when the user buy pixels for the very first time
+name: buyPixelsFristTime || 
+invoke when the user buy pixels for the very first time
+
 | params   | type   | size | tip                        |
 | ------ | ------ | ---- | ---------------------------- |
 | pixelsToBuy | uint32 | --   | pixels' coordinate to buy |
@@ -49,8 +50,9 @@ uint public finalPotAmount;
 function buyPixelsFristTime(uint32[] pixelsToBuy, address referrer) payable returns (uint32)
 ```
 
-// name: buyPixels
-// invoke when the user buy pixels
+name: buyPixels || 
+invoke when the user buy pixels
+
 | params   | type   | size | tip                         |
 | ------ | ------ | ---- | ---------------------------- |
 | pixelsToBuy | uint32 | --   | pixels' coordinate to buy |
@@ -64,8 +66,9 @@ function buyPixels(uint32[] pixelsToBuy) payable returns (uint32)
 
 ### 4.1 Get total price of pixels
 
-// name: getTotalPrice
-// get total price of a given bunch of coordinates
+name: getTotalPrice || 
+get total price of a given bunch of coordinates
+
 | params   | type   | size | tip                         |
 | ------ | ------ | ---- | ---------------------------- |
 | coordinates | uint32(Array) | --   | pixels coordinate to query |
@@ -75,8 +78,9 @@ function getTotalPrice(uint32[] coordinates) public view returns (uint totalPric
 
 ### 4.2 Get price of each pixels amount the array
 
-// name: getPixelsPrice
-// get each price of a given bunch of coordinates
+name: getPixelsPrice || 
+get each price of a given bunch of coordinates
+
 | params   | type   | size | tip                         |
 | ------ | ------ | ---- | ---------------------------- |
 | coordinates | uint32(Array) | --   | pixels coordinate to query |
@@ -104,8 +108,9 @@ function getPixelsPrice(uint32[] coordinates) public view returns (uint[])
 
 ### 4.3 Get pixel information
 
-// name: getPixel
-// get the information by the given coordinate
+name: getPixel || 
+get the information by the given coordinate
+
 | params   | type   | size | tip                        |
 | ------ | ------ | ---- | ---------------------------- |
 | coordinate | uint32 | --  | pixel coordinate to query |
@@ -122,16 +127,17 @@ function getPixel(uint32 coordinate) public view returns (address owner, uint32 
 
 ### 4.4 Get user information
 
-// name: getUserInfo
-// get the information of user
+name: getUserInfo || 
+get the information of user
 ```solidity
 function getPixel(uint32 coordinate) public view returns (address owner, uint32 color, uint price)
 ```
 
 ### 4.5 Get user information by address
 
-// name: getUserInfoByAddress
-// get the information of user by the given address
+name: getUserInfoByAddress || 
+get the information of user by the given address
+
 | params   | type   | size | tip                        |
 | ------ | ------ | ---- | ---------------------------- |
 | address | address | --  | address of user |
@@ -144,8 +150,9 @@ function getUserInfoByAddress(address addr) public view returns (
 ### 4.6 Get paint logs
 
 
-// name: getPaintLogs
-// get the logs of recent user buying activity
+name: getPaintLogs || 
+get the logs of recent user buying activity
+
 | params   | type   | size | tip                        |
 | ------ | ------ | ---- | ---------------------------- |
 | offset | uint32 | --  | offset of this query |
@@ -158,16 +165,18 @@ function getPaintLogs(uint32 offset, uint32 limit) public view returns (address[
 
 ### 5.1 Player withdraw
 
-// name: withdraw
-// invoke the withdraw activity
+name: withdraw || 
+invoke the withdraw activity
+
 ```solidity
 function withdraw() public
 ```
 
 ### 5.2 Team withdraw
 
-// name: teamWithdraw
-// invoke the teamWithdraw activity
+name: teamWithdraw || 
+invoke the teamWithdraw activity
+
 ```solidity
 function teamWithdraw() public
 ```
